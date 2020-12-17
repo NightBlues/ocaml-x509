@@ -217,7 +217,7 @@ module Asn = struct
 
     and a_g = function
       | DC x -> (domain_component, `C3 x )
-      | CN x -> (X520.common_name, `C2 x )
+      | CN x -> (X520.common_name, `C1 x )
       | Serialnumber x -> (X520.serial_number, `C2 x )
       | C x -> (X520.country_name, `C2 x )
       | L x -> (X520.locality_name, `C1 x )
